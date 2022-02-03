@@ -625,7 +625,7 @@ body {
     line-height: 20px;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #ffffff;
+    color: #151515;
     opacity: 0.7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
@@ -635,6 +635,7 @@ body {
     -ms-grid-row: 2;
     grid-row: 2;
     padding: 0 0 14px 0;
+    font-weight:bold;
 }
 .join-the-community__item {
     display: -ms-grid;
@@ -737,6 +738,7 @@ body {
     letter-spacing: -0.02em;
     color: #ffffff;
     padding: 0 16px 0 0;
+    text-shadow: 1px 4px rgba(0,0,0,0.25);
 }
 .follow__amount {
     font-style: normal;
@@ -748,6 +750,7 @@ body {
     grid-column: 1/3;
     letter-spacing: -0.02em;
     color: #ffffff;
+    text-shadow: 1px 4px rgba(0,0,0,0.25);
 }
 .follow__followers {
     font-style: normal;
