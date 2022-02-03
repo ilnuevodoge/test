@@ -317,7 +317,7 @@ body {
     background: url("../img/background.jpg") no-repeat;
     background-size: cover;
     background-position: bottom center;
-    height: 60vh;
+    height: 72vh;
 }
 .main-screen__inner {
     display: flex;
