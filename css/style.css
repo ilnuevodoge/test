@@ -316,8 +316,8 @@ body {
 .main-screen {
     background: url("../img/background.jpg") no-repeat;
     background-size: cover;
-    background-position: center center;
-    height: 100vh;
+    background-position: bottom center;
+    height: 60vh;
 }
 .main-screen__inner {
     display: flex;
@@ -351,7 +351,7 @@ body {
     column-gap: 22px;
 }
 .big-info {
-    top: -36px;
+    top: -64px;
     position: relative;
     z-index: 2;
     margin-bottom: 28px;
