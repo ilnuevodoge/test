@@ -1214,7 +1214,6 @@ body {
     .header__logo {
         position: relative;
         z-index: 101;
-        max-width: 36px;
     }
     .header__nav {
         position: fixed;
