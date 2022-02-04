@@ -277,12 +277,16 @@ body {
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 12px;
-    background:rgba(255,255,255,0.5);
+    background:rgba(255,255,255,0.75);
+    color: #f95e98;
+    font-weight:bold;
 }
 .header__sm-info-icon {
     width: 26px;
     height: 26px;
-    margin-right: 4px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 2px solid #f95e98;
 }
 .header__btn {
     display: inline-flex;
