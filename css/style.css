@@ -643,7 +643,7 @@ body {
     -ms-grid-columns: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 0px 32px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 12px;
     padding: 32px 0 0 32px;
     overflow: hidden;
