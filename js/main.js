@@ -86,7 +86,6 @@ window.onload = (function () {
   const marketCap = document.querySelector('#marketCap');
   const volume = document.querySelector('#volume');
   const price = document.querySelector('#price');
-  const priceHeader = document.querySelector('#priceHeader');
   const percent = document.querySelector('#percent');
   const arrowIconForWidget = document.querySelector('#arrowIconForWidget');
   const arrowIconForWidgetHeader = document.querySelector('#arrowIconForWidgetHeader');
@@ -121,9 +120,7 @@ window.onload = (function () {
     arrowIconForWidgetHeader.setAttribute('src', arrowUrl);
 
 
-    price.textContent = parseFloat(priceData['data'][9436]['quote']['USD']['price']).toFixed(9);
-    priceHeader.textContent = parseFloat(priceData['data'][9436]['quote']['USD']['price']).toFixed(9);
-    percent.textContent = widgetData.percent;
+
 
     let widgetInfoBox = document.querySelectorAll('.coinmarketcap-currency-widget > div > div')[1].querySelectorAll('div');
     widgetData.rank = widgetInfoBox[0].querySelector('span').textContent;
