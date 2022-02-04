@@ -74,64 +74,7 @@ window.onload = (function () {
 
 
 
-  const widgetData = {
-    rank: '',
-    marketCap: '',
-    volume: '',
-    price: '',
-    percent: ''
-  }
-
-  const rank = document.querySelector('#rank');
-  const marketCap = document.querySelector('#marketCap');
-  const volume = document.querySelector('#volume');
-  const price = document.querySelector('#price');
-  const percent = document.querySelector('#percent');
-  const arrowIconForWidget = document.querySelector('#arrowIconForWidget');
-  const arrowIconForWidgetHeader = document.querySelector('#arrowIconForWidgetHeader');
-
-
-  const isGrown = (str) => {
-    return str[1] !== '-';
-  }
-
-
-  var xmlhttp = new XMLHttpRequest();
-  var url = "https://3rdparty-apis.coinmarketcap.com/v1/cryptocurrency/widget?id=9436";
-  var priceData;
-  xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-          priceData = JSON.parse(this.responseText);
-          console.log(priceData['data'][9436]['quote']['USD']['price'])
-      }
-  };
-  xmlhttp.open("GET", url, true);
-  xmlhttp.send();
-
-
-  setTimeout(() => {
-    let widgetPriceBox = document.querySelectorAll('.coinmarketcap-currency-widget > div > div > div')[1];
-    widgetData.price = widgetPriceBox.querySelectorAll('span')[2].textContent;
-    widgetData.percent = widgetPriceBox.querySelectorAll('span')[5].textContent;
-
-    const arrowUrl = isGrown(widgetData.percent) ? 'img/arrow-to-top.svg' : 'img/arrow-to-down.svg';
-
-    arrowIconForWidget.setAttribute('src', arrowUrl);
-    arrowIconForWidgetHeader.setAttribute('src', arrowUrl);
-
-
-
-
-    let widgetInfoBox = document.querySelectorAll('.coinmarketcap-currency-widget > div > div')[1].querySelectorAll('div');
-    widgetData.rank = widgetInfoBox[0].querySelector('span').textContent;
-    widgetData.marketCap = widgetInfoBox[1].querySelector('span').textContent;
-    widgetData.volume = widgetInfoBox[2].querySelector('span').textContent;
-
-    rank.textContent = widgetData.rank;
-    marketCap.textContent = widgetData.marketCap;
-    volume.textContent = widgetData.volume;
-  }, 500)
-
+  
 
 
 
